@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimens for banner type -->
+    <dimen name="banner_image_width">390dp</dimen>
+    <dimen name="banner_image_height">250dp</dimen>
+
+    <!-- Dimens for list type -->
+    <dimen name="list_image_width">60dp</dimen>
+    <dimen name="list_image_height">60dp</dimen>
+</resources>

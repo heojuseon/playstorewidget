@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayStoreCustomList">
+        <attr name="list_type" format="integer">
+            <enum name="banner" value="0"/>
+            <enum name="list" value="1"/>
+            <enum name="icon" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
