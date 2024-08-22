@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.study.typeui.databinding.PlaystoreCustomItemBinding
+import com.study.typeui.databinding.PlaystoreBannerListItemBinding
 import com.study.typeui.dto.PlayStoreContent
 
 class GridAdapter(
@@ -13,7 +13,7 @@ class GridAdapter(
 ) : RecyclerView.Adapter<GridAdapter.ItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridAdapter.ItemViewHolder {
-        val binding = PlaystoreCustomItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = PlaystoreBannerListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ItemViewHolder(binding)
     }
 
@@ -25,7 +25,7 @@ class GridAdapter(
         return playStoreContent.size
     }
 
-    inner class ItemViewHolder(private val binding: PlaystoreCustomItemBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class ItemViewHolder(private val binding: PlaystoreBannerListItemBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(playStoreContent: PlayStoreContent) {
 
             binding.apply {

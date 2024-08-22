@@ -46,17 +46,22 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
 
     private fun setPlayStoreView() {
         when(isType) {
-            0 -> {  //banner
+            0 -> {
+                //banner
                 viewPager.visibility = View.VISIBLE
                 recyclerView.visibility = View.GONE
-
-
             }
-            1 -> {  //list
+            1 -> {
+                //list
                 viewPager.visibility = View.GONE
                 recyclerView.visibility = View.VISIBLE
-                recyclerView.layoutManager = LinearLayoutManager(context)
-                recyclerView.layoutManager = GridLayoutManager(context, 3, RecyclerView.HORIZONTAL, false)
+                recyclerView.layoutManager = GridLayoutManager(context, 3, GridLayoutManager.HORIZONTAL, false)
+            }
+            2 -> {
+                //icon
+                viewPager.visibility = View.GONE
+                recyclerView.visibility = View.VISIBLE
+                recyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
             }
         }
     }
@@ -64,7 +69,6 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
 
     fun setJsonData(playStoreContent: List<PlayStoreContent>){
         customAdapter = PlayStoreCustomAdapter(playStoreContent, isType)
-//        customAdapter = PlayStoreCustomAdapter(playStoreContent)
         when(isType){
             0 -> {
                 viewPager.adapter = customAdapter
@@ -72,6 +76,10 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
             1 -> {
                 recyclerView.adapter = customAdapter
                 //pagersnaphelper
+                pagerSnapHelper.attachToRecyclerView(recyclerView)
+            }
+            2 -> {
+                recyclerView.adapter = customAdapter
                 pagerSnapHelper.attachToRecyclerView(recyclerView)
             }
         }

@@ -24,24 +24,46 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val json = loadJson()
+//        val json = loadJson()
+//        val gson = Gson()
+//        val playStoreFake = gson.fromJson(json, PlayStoreFake::class.java)
         val gson = Gson()
-        val playStoreFake = gson.fromJson(json, PlayStoreFake::class.java)
-        binding.bannerList.setJsonData(playStoreFake.content)
-        binding.horizontalList.setJsonData(playStoreFake.content)
+        val playStoreFakes = listOf(
+            loadJson("googleplay_game_board_30.json"),
+            loadJson("googleplay_game_sports_30.json"),
+            loadJson("googleplay_game_action_30.json")
+        ).map {
+            gson.fromJson(it, PlayStoreFake::class.java)
+        }
+
+
+        binding.bannerList.setJsonData(playStoreFakes[0].content)
+        binding.horizontalList.setJsonData(playStoreFakes[1].content)
+        binding.iconList.setJsonData(playStoreFakes[2].content)
 
     }
-
-    private fun loadJson(): String? {
-        val json: String
-        try {
-            json = requireContext().assets.open("googleplay_game_action_30.json")
+    private fun loadJson(fileName: String): String? {
+        return try {
+            requireContext().assets.open(fileName)
                 .bufferedReader()
                 .use { it.readText() }
-        }catch (e: IOException){
+        } catch (e: IOException) {
             e.printStackTrace()
-            return null
+            null
         }
-        return json
     }
+
+//    private fun loadJson(): String? {
+//        val json: String
+//        try {
+//            json = requireContext().assets.open("googleplay_game_board_30.json")
+//                .bufferedReader()
+//                .use { it.readText() }
+//        }catch (e: IOException){
+//            e.printStackTrace()
+//            return null
+//        }
+//        return json
+//    }
+
 }
