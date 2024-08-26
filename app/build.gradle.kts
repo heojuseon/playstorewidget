@@ -42,7 +42,8 @@ android {
 
 dependencies {
 
-    implementation(project(":typeui")) // typeui 대한 의존성
+    implementation(project(":playStoreCustomViewType"))
+    // typeui 대한 의존성
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.7.0")

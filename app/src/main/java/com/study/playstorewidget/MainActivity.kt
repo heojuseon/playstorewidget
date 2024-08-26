@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.study.playstorewidget.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,5 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         //navigation graph 가 작동할 위치에 set
         navController = binding.fragmentContainerView.getFragment<NavHostFragment>().navController
+        //bottom_navi 와 navigation 연결
+        binding.bnvMain.setupWithNavController(navController)
     }
 }

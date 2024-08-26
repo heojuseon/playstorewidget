@@ -6,7 +6,17 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.study.typeui.view.MainFragment"
+        android:name="com.study.playstorewidget.view.BottomGameFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_bottom_game"/>
+    <fragment
+        android:id="@+id/bottomAppFragment"
+        android:name="com.study.playstorewidget.view.BottomAppFragment"
+        android:label="fragment_bottom_app"
+        tools:layout="@layout/fragment_bottom_app" />
+    <fragment
+        android:id="@+id/bottomBookFragment"
+        android:name="com.study.playstorewidget.view.BottomBookFragment"
+        android:label="fragment_bottom_book"
+        tools:layout="@layout/fragment_bottom_book" />
 </navigation>

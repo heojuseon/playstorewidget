@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PlayStoreWidget"
 include(":app")
-include(":typeui")
+include(":playStoreCustomViewType")

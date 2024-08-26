@@ -46,7 +46,7 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
             PlayStoreViewType.HORIZONTAL_LIST.ordinal -> PlayStoreViewHorizontalList(context)
             PlayStoreViewType.ICON_LIST.ordinal -> PlayStoreViewIcon(context)
 
-            else -> {throw IllegalArgumentException("Invalid type")}
+            else -> {throw IllegalArgumentException("error_type")}
         }
 
         addView(baseView)

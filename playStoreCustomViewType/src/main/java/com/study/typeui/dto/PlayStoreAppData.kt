@@ -2,7 +2,7 @@ package com.study.typeui.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class PlayStoreFake(
+data class PlayStoreAppData(
 
     @SerializedName("content")
     val content: List<PlayStoreContent>
@@ -22,6 +22,5 @@ data class PlayStoreContent(
     val category: Int = 0,
 
     @SerializedName("score")
-    val score: String = "",
-
+    val score: String = ""
 )

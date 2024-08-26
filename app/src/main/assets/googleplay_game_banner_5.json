@@ -1,0 +1,89 @@
+{
+  "totalElements": 1000,
+  "totalPages": 34,
+  "first": false,
+  "last": false,
+  "size": 5,
+  "content": [
+    {
+      "id": 18806,
+      "title": "리니지2M",
+      "version": "0.19",
+      "versionCode": null,
+      "fileSize": null,
+      "developer": "Dexus Dinosaur",
+      "score": "3.4",
+      "url": "https://play-lh.googleusercontent.com/wLK-Y1eEvtUbxB8q-s__F9VAvo7t06SZs4KEnWf7InYYgT9aN1KyWr0vLDHvonbre8E=w1702-h4320-rw",
+      "category": 1,
+      "pkg": "com.Dexus.Dinosaur.TRexFights.Dinosaurs"
+    },
+    {
+      "id": 18805,
+      "title": "DRAGON BALL LEGENDS 드래곤 볼 레전즈",
+      "version": "2.6.6.733592",
+      "versionCode": null,
+      "fileSize": null,
+      "developer": "Halfbrick Studios",
+      "score": "9.0",
+      "url": "https://play-lh.googleusercontent.com/zibpu0kTxCDuv8kbHdj7as--V_RViLFbGoYxITAgg3FYRJHylweb0veJcBz6jEOeHJwF=w1702-h4320-rw",
+      "category": 1,
+      "pkg": "com.halfbrick.colossatron"
+    },
+    {
+      "id": 18804,
+      "title": "레이븐 크라이",
+      "version": "2.6.6.733592",
+      "versionCode": null,
+      "fileSize": null,
+      "developer": "Halfbrick Studios",
+      "score": "4.3",
+      "url": "https://play-lh.googleusercontent.com/iNDCRVsf0YxB7rrvjPwvUIc1ycYKZNltWZ-1NS1iujkBfGQ6MXKUIopAIptHXrPnKC8M=w1052-h592-rw",
+      "category": 1,
+      "pkg": "com.halfbrick.colossatron"
+    },
+    {
+      "id": 18803,
+      "title": "ONE PIECE TREASURE CRUISE-RPG",
+      "version": "2.6.6.733592",
+      "versionCode": null,
+      "fileSize": null,
+      "developer": "Halfbrick Studios",
+      "score": "4.6",
+      "url": "https://play-lh.googleusercontent.com/NmZEQcfNhVMN7b940P6QrgCMr27-ikE50MZWva-_Rr8fK2naEL2jveXi_6PrW3R6pWQ=w1702-h4320-rw",
+      "category": 1,
+      "pkg": "com.halfbrick.colossatron"
+    },
+    {
+      "id": 18802,
+      "title": "나 혼자만 레벨업:어라이즈",
+      "version": "2.6.6.733592",
+      "versionCode": null,
+      "fileSize": null,
+      "developer": "Halfbrick Studios",
+      "score": "4.4",
+      "url": "https://play-lh.googleusercontent.com/3Ssjls4qmvYNKzo0ShLMSQXaB0LBzBlO2LhSaZmTNW_UEzFlcZwbwJo9tiqmUfNRkCi9=w1702-h4320-rw",
+      "category": 1,
+      "pkg": "com.halfbrick.colossatron"
+    }
+  ],
+  "number": 1,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 30,
+  "pageable": {
+    "pageNumber": 1,
+    "pageSize": 30,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 30,
+    "unpaged": false,
+    "paged": true
+  },
+  "empty": false
+}
