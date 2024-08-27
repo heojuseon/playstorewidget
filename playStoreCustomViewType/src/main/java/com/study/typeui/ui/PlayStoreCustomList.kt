@@ -9,6 +9,7 @@ import com.study.typeui.adapter.PlayStoreCustomAdapter
 import com.study.typeui.adapter.PlayStoreGridAdapter
 import com.study.typeui.config.PlayStoreViewType
 import com.study.typeui.dto.PlayStoreContent
+import com.study.typeui.interfaces.OnPlayStoreCustomAppItem
 import com.study.typeui.ui.child.PlayStoreViewBanner
 import com.study.typeui.ui.child.PlayStoreViewBase
 import com.study.typeui.ui.child.PlayStoreViewHorizontalList
@@ -18,10 +19,12 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
     private val view: View
     private var isType: Int = 0
 
-    private lateinit var customAdapter: PlayStoreCustomAdapter
-//    private lateinit var gridAdapter: PlayStoreGridAdapter
-
     private lateinit var baseView: PlayStoreViewBase
+
+    //외부에서 사용할 리스너 함수
+    fun setPlayStoreAppItemClickListener(listener: OnPlayStoreCustomAppItem){
+        baseView.setPlayStoreAppItemClickListener(listener)
+    }
 
     init {
         view = inflate(context, R.layout.custom_list_layout, this)
@@ -56,5 +59,4 @@ class PlayStoreCustomList(context: Context, attrs: AttributeSet): FrameLayout(co
     fun setJsonData(playStoreContent: List<PlayStoreContent>){
         baseView.setData(playStoreContent)
     }
-
 }

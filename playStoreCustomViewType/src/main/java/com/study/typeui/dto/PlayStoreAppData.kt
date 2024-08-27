@@ -22,5 +22,8 @@ data class PlayStoreContent(
     val category: Int = 0,
 
     @SerializedName("score")
-    val score: String = ""
+    val score: String = "",
+
+    @SerializedName("pkg")
+    val pkg: String = ""
 )
