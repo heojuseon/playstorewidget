@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+<!-- QUERY_ALL_PACKAGES 권한은 Android 11 부터 적용되며, SDK는 30 이상을 타겟팅 해야 사용 -->
+<!--  앱에 접근하여 패키지명 얻어오기 위해서는 permisson 필요  -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"

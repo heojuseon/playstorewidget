@@ -2,6 +2,7 @@ package com.study.typeui.util
 
 import android.content.Context
 import android.content.pm.PackageManager
+import android.util.Log
 
 object PlayStoreAppInstall {
     /**
@@ -12,6 +13,7 @@ object PlayStoreAppInstall {
      * @return 설치되어 있으면 true, 설치되어 있지 않으면 false
      */
     fun isPackageInstalled(context: Context, packageName: String): Boolean{
+        Log.d("!@!@#!@#", "isPackageInstalled_packageName: $packageName")
         return try {
             val packageManager = context.packageManager
             packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)

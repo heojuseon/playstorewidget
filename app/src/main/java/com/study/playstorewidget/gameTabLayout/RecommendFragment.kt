@@ -52,10 +52,10 @@ class RecommendFragment : Fragment() {
             //앱 설치 유무
             if (isInstalled) {
                 //설치 true
-//                    val launchIntent = context.packageManager.getLaunchIntentForPackage(packageName)
-//                    if (launchIntent != null) {
-//                        context.startActivity(launchIntent)
-//                    }
+                val launchIntent = context?.packageManager?.getLaunchIntentForPackage(playStoreContent.pkg)
+                if (launchIntent != null) {
+                    context?.startActivity(launchIntent)
+                }
                 Toast.makeText(context, "앱을 실행합니다", Toast.LENGTH_SHORT).show()
             } else {
                 //설치x false
